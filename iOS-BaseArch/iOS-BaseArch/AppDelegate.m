@@ -21,7 +21,13 @@
     [[ADPushManager shareManager] regPush];
     [[ADPushManager shareManager] handlePushMessageWithOptions:launchOptions];
     
+    [self initThirdParty];
+    
     return YES;
+}
+
+- (void)initThirdParty {
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
