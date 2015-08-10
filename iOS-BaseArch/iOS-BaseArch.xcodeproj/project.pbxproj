@@ -24,6 +24,11 @@
 		035E3A041B78890100EA3A23 /* NSTimer+Pausing.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A031B78890100EA3A23 /* NSTimer+Pausing.m */; };
 		035E3A081B78963300EA3A23 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A071B78963300EA3A23 /* GlobalConstants.swift */; };
 		035E3A0D1B789D2E00EA3A23 /* ADPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A0C1B789D2E00EA3A23 /* ADPushManager.m */; };
+		035E3A131B78A69100EA3A23 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A101B78A69100EA3A23 /* TableViewDataSource.m */; };
+		035E3A141B78A69100EA3A23 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A121B78A69100EA3A23 /* TableViewDelegate.m */; };
+		035E3A1F1B78A70800EA3A23 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A1D1B78A70800EA3A23 /* CustomTableViewCell.m */; };
+		035E3A201B78A70800EA3A23 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035E3A1E1B78A70800EA3A23 /* CustomTableViewCell.xib */; };
+		035E3A231B78A86400EA3A23 /* CustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A221B78A86400EA3A23 /* CustomModel.m */; };
 		ADC71A759C01E5181F95B809 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF103269453EC5DB51B33C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +81,15 @@
 		035E3A0A1B78987000EA3A23 /* BlockDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockDefine.h; sourceTree = "<group>"; };
 		035E3A0B1B789D2E00EA3A23 /* ADPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPushManager.h; sourceTree = "<group>"; };
 		035E3A0C1B789D2E00EA3A23 /* ADPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPushManager.m; sourceTree = "<group>"; };
+		035E3A0F1B78A69100EA3A23 /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		035E3A101B78A69100EA3A23 /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		035E3A111B78A69100EA3A23 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
+		035E3A121B78A69100EA3A23 /* TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDelegate.m; sourceTree = "<group>"; };
+		035E3A1C1B78A70800EA3A23 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		035E3A1D1B78A70800EA3A23 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		035E3A1E1B78A70800EA3A23 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		035E3A211B78A86400EA3A23 /* CustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomModel.h; sourceTree = "<group>"; };
+		035E3A221B78A86400EA3A23 /* CustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModel.m; sourceTree = "<group>"; };
 		35BF103269453EC5DB51B33C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59954B710EBE369AC951A31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB68E64B7EE9091F1A6803 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +232,8 @@
 		035E39CD1B787B8E00EA3A23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				035E3A211B78A86400EA3A23 /* CustomModel.h */,
+				035E3A221B78A86400EA3A23 /* CustomModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -225,6 +241,8 @@
 		035E39CE1B787B9500EA3A23 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				035E3A161B78A6D200EA3A23 /* Button */,
+				035E3A151B78A6AA00EA3A23 /* Cell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -248,6 +266,7 @@
 		035E39D11B787BBB00EA3A23 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				035E3A0E1B78A65A00EA3A23 /* TableViewProtocol */,
 				035E39A51B78709700EA3A23 /* ViewController.h */,
 				035E39A61B78709700EA3A23 /* ViewController.m */,
 			);
@@ -402,6 +421,34 @@
 			name = "Ad Statistics";
 			sourceTree = "<group>";
 		};
+		035E3A0E1B78A65A00EA3A23 /* TableViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				035E3A0F1B78A69100EA3A23 /* TableViewDataSource.h */,
+				035E3A101B78A69100EA3A23 /* TableViewDataSource.m */,
+				035E3A111B78A69100EA3A23 /* TableViewDelegate.h */,
+				035E3A121B78A69100EA3A23 /* TableViewDelegate.m */,
+			);
+			name = TableViewProtocol;
+			sourceTree = "<group>";
+		};
+		035E3A151B78A6AA00EA3A23 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				035E3A1C1B78A70800EA3A23 /* CustomTableViewCell.h */,
+				035E3A1D1B78A70800EA3A23 /* CustomTableViewCell.m */,
+				035E3A1E1B78A70800EA3A23 /* CustomTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		035E3A161B78A6D200EA3A23 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
 		0498878A5E633C99EFE39524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +550,7 @@
 			files = (
 				035E39AF1B78709700EA3A23 /* LaunchScreen.xib in Resources */,
 				035E39AC1B78709700EA3A23 /* Images.xcassets in Resources */,
+				035E3A201B78A70800EA3A23 /* CustomTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +601,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035E3A1F1B78A70800EA3A23 /* CustomTableViewCell.m in Sources */,
 				035E39ED1B78812700EA3A23 /* UIImage+Tint.m in Sources */,
 				035E39E01B787DA300EA3A23 /* UIFont+ADFont.m in Sources */,
 				035E3A0D1B789D2E00EA3A23 /* ADPushManager.m in Sources */,
@@ -562,8 +611,11 @@
 				035E3A081B78963300EA3A23 /* GlobalConstants.swift in Sources */,
 				035E39A71B78709700EA3A23 /* ViewController.m in Sources */,
 				035E39E71B787F9400EA3A23 /* NSUserDefaults+ADSaveSettings.m in Sources */,
+				035E3A131B78A69100EA3A23 /* TableViewDataSource.m in Sources */,
 				035E39F31B78819800EA3A23 /* AFDateExtension.swift in Sources */,
 				035E39A41B78709700EA3A23 /* AppDelegate.m in Sources */,
+				035E3A141B78A69100EA3A23 /* TableViewDelegate.m in Sources */,
+				035E3A231B78A86400EA3A23 /* CustomModel.m in Sources */,
 				035E3A001B7888C700EA3A23 /* NSDate+Escort.m in Sources */,
 				035E39C91B787AA100EA3A23 /* ADAppearance.swift in Sources */,
 				035E39A11B78709700EA3A23 /* main.m in Sources */,
