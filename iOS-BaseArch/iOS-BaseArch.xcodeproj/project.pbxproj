@@ -29,6 +29,7 @@
 		035E3A1F1B78A70800EA3A23 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A1D1B78A70800EA3A23 /* CustomTableViewCell.m */; };
 		035E3A201B78A70800EA3A23 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035E3A1E1B78A70800EA3A23 /* CustomTableViewCell.xib */; };
 		035E3A231B78A86400EA3A23 /* CustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A221B78A86400EA3A23 /* CustomModel.m */; };
+		035E3A271B78B4E600EA3A23 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A261B78B4E600EA3A23 /* UIView+Layout.m */; };
 		ADC71A759C01E5181F95B809 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF103269453EC5DB51B33C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		035E3A1E1B78A70800EA3A23 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		035E3A211B78A86400EA3A23 /* CustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomModel.h; sourceTree = "<group>"; };
 		035E3A221B78A86400EA3A23 /* CustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModel.m; sourceTree = "<group>"; };
+		035E3A251B78B4E600EA3A23 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		035E3A261B78B4E600EA3A23 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		35BF103269453EC5DB51B33C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59954B710EBE369AC951A31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB68E64B7EE9091F1A6803 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +279,7 @@
 		035E39D21B787C1700EA3A23 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				035E3A241B78B4DF00EA3A23 /* UIView */,
 				035E39DA1B787C8B00EA3A23 /* Color */,
 				035E39D91B787C8600EA3A23 /* Font */,
 				035E39D81B787C7000EA3A23 /* NSUserDefaults */,
@@ -449,6 +453,15 @@
 			name = Button;
 			sourceTree = "<group>";
 		};
+		035E3A241B78B4DF00EA3A23 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				035E3A251B78B4E600EA3A23 /* UIView+Layout.h */,
+				035E3A261B78B4E600EA3A23 /* UIView+Layout.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
 		0498878A5E633C99EFE39524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +620,7 @@
 				035E3A0D1B789D2E00EA3A23 /* ADPushManager.m in Sources */,
 				035E39EA1B7880C800EA3A23 /* NSError+ADError.m in Sources */,
 				035E39DD1B787C9A00EA3A23 /* UIColor+ADColor.m in Sources */,
+				035E3A271B78B4E600EA3A23 /* UIView+Layout.m in Sources */,
 				035E3A041B78890100EA3A23 /* NSTimer+Pausing.m in Sources */,
 				035E3A081B78963300EA3A23 /* GlobalConstants.swift in Sources */,
 				035E39A71B78709700EA3A23 /* ViewController.m in Sources */,
