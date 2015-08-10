@@ -118,7 +118,6 @@
 			children = (
 				035E3A051B78895C00EA3A23 /* Ad Statistics */,
 				035E39FC1B7884F200EA3A23 /* Network */,
-				035E39F91B7882F400EA3A23 /* DAO */,
 				035E39CE1B787B9500EA3A23 /* View */,
 				035E39CD1B787B8E00EA3A23 /* Model */,
 				035E39CF1B787B9D00EA3A23 /* ViewModel */,
@@ -375,21 +374,6 @@
 			children = (
 			);
 			name = ThirdParty;
-			sourceTree = "<group>";
-		};
-		035E39F91B7882F400EA3A23 /* DAO */ = {
-			isa = PBXGroup;
-			children = (
-				035E39FB1B78841B00EA3A23 /* BaseDAO */,
-			);
-			name = DAO;
-			sourceTree = "<group>";
-		};
-		035E39FB1B78841B00EA3A23 /* BaseDAO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = BaseDAO;
 			sourceTree = "<group>";
 		};
 		035E39FC1B7884F200EA3A23 /* Network */ = {
