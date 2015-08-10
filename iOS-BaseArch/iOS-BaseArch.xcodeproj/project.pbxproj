@@ -23,6 +23,7 @@
 		035E3A001B7888C700EA3A23 /* NSDate+Escort.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E39FF1B7888C700EA3A23 /* NSDate+Escort.m */; };
 		035E3A041B78890100EA3A23 /* NSTimer+Pausing.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A031B78890100EA3A23 /* NSTimer+Pausing.m */; };
 		035E3A081B78963300EA3A23 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A071B78963300EA3A23 /* GlobalConstants.swift */; };
+		035E3A0D1B789D2E00EA3A23 /* ADPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A0C1B789D2E00EA3A23 /* ADPushManager.m */; };
 		ADC71A759C01E5181F95B809 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF103269453EC5DB51B33C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		035E3A071B78963300EA3A23 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		035E3A091B78966D00EA3A23 /* NotificationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationDefine.h; sourceTree = "<group>"; };
 		035E3A0A1B78987000EA3A23 /* BlockDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockDefine.h; sourceTree = "<group>"; };
+		035E3A0B1B789D2E00EA3A23 /* ADPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPushManager.h; sourceTree = "<group>"; };
+		035E3A0C1B789D2E00EA3A23 /* ADPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPushManager.m; sourceTree = "<group>"; };
 		35BF103269453EC5DB51B33C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59954B710EBE369AC951A31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB68E64B7EE9091F1A6803 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 		035E39CA1B787AF200EA3A23 /* PushManager */ = {
 			isa = PBXGroup;
 			children = (
+				035E3A0B1B789D2E00EA3A23 /* ADPushManager.h */,
+				035E3A0C1B789D2E00EA3A23 /* ADPushManager.m */,
 			);
 			name = PushManager;
 			sourceTree = "<group>";
@@ -550,6 +555,7 @@
 			files = (
 				035E39ED1B78812700EA3A23 /* UIImage+Tint.m in Sources */,
 				035E39E01B787DA300EA3A23 /* UIFont+ADFont.m in Sources */,
+				035E3A0D1B789D2E00EA3A23 /* ADPushManager.m in Sources */,
 				035E39EA1B7880C800EA3A23 /* NSError+ADError.m in Sources */,
 				035E39DD1B787C9A00EA3A23 /* UIColor+ADColor.m in Sources */,
 				035E3A041B78890100EA3A23 /* NSTimer+Pausing.m in Sources */,

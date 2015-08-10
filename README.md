@@ -27,7 +27,7 @@ iOS开发基础框架 及 推荐实践，目的在于帮助开发者更快的开
   - Share （有关分享的图片）
 
 ##### 代码组织：
-- Ad Statistics （有关广告统计代码）
+- Ad Statistics （广告统计代码）
 - Network （网络相关代码）
   - View （自定义View）
 - Model (自定义模型)
