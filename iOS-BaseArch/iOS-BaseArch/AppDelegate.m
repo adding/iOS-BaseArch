@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ADPushManager.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,17 +18,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
     [[ADPushManager shareManager] regPush];
     [[ADPushManager shareManager] handlePushMessageWithOptions:launchOptions];
     
     [self initThirdParty];
+    
+    [self setRootVc];
     
     return YES;
 }
 
 - (void)initThirdParty {
     
+}
+
+- (void)setRootVc {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
+
+    self.window.rootViewController = [[ViewController alloc]init];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
