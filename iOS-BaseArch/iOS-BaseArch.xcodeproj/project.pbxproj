@@ -30,6 +30,10 @@
 		035E3A201B78A70800EA3A23 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035E3A1E1B78A70800EA3A23 /* CustomTableViewCell.xib */; };
 		035E3A231B78A86400EA3A23 /* CustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A221B78A86400EA3A23 /* CustomModel.m */; };
 		035E3A271B78B4E600EA3A23 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035E3A261B78B4E600EA3A23 /* UIView+Layout.m */; };
+		037038BE1B79CA9D001A3E22 /* ADDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 037038BD1B79CA9D001A3E22 /* ADDataBaseManager.m */; };
+		037038C31B79CC41001A3E22 /* ADUserLoction.m in Sources */ = {isa = PBXBuildFile; fileRef = 037038C01B79CC41001A3E22 /* ADUserLoction.m */; };
+		037038C41B79CC41001A3E22 /* ADLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 037038C21B79CC41001A3E22 /* ADLocationManager.m */; };
+		037038C61B79D2C0001A3E22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037038C51B79D2C0001A3E22 /* CoreLocation.framework */; };
 		ADC71A759C01E5181F95B809 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF103269453EC5DB51B33C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +97,13 @@
 		035E3A221B78A86400EA3A23 /* CustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModel.m; sourceTree = "<group>"; };
 		035E3A251B78B4E600EA3A23 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		035E3A261B78B4E600EA3A23 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		037038BC1B79CA9D001A3E22 /* ADDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDataBaseManager.h; sourceTree = "<group>"; };
+		037038BD1B79CA9D001A3E22 /* ADDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADDataBaseManager.m; sourceTree = "<group>"; };
+		037038BF1B79CC41001A3E22 /* ADUserLoction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADUserLoction.h; sourceTree = "<group>"; };
+		037038C01B79CC41001A3E22 /* ADUserLoction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADUserLoction.m; sourceTree = "<group>"; };
+		037038C11B79CC41001A3E22 /* ADLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLocationManager.h; sourceTree = "<group>"; };
+		037038C21B79CC41001A3E22 /* ADLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLocationManager.m; sourceTree = "<group>"; };
+		037038C51B79D2C0001A3E22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		35BF103269453EC5DB51B33C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59954B710EBE369AC951A31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB68E64B7EE9091F1A6803 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037038C61B79D2C0001A3E22 /* CoreLocation.framework in Frameworks */,
 				ADC71A759C01E5181F95B809 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +228,10 @@
 		035E39CB1B787AFE00EA3A23 /* LocationManager */ = {
 			isa = PBXGroup;
 			children = (
+				037038BF1B79CC41001A3E22 /* ADUserLoction.h */,
+				037038C01B79CC41001A3E22 /* ADUserLoction.m */,
+				037038C11B79CC41001A3E22 /* ADLocationManager.h */,
+				037038C21B79CC41001A3E22 /* ADLocationManager.m */,
 			);
 			name = LocationManager;
 			sourceTree = "<group>";
@@ -260,6 +276,7 @@
 		035E39D01B787BA800EA3A23 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				037038BB1B79CA84001A3E22 /* DataBaseManager */,
 				035E39CB1B787AFE00EA3A23 /* LocationManager */,
 				035E39CA1B787AF200EA3A23 /* PushManager */,
 			);
@@ -462,9 +479,19 @@
 			name = UIView;
 			sourceTree = "<group>";
 		};
+		037038BB1B79CA84001A3E22 /* DataBaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				037038BC1B79CA9D001A3E22 /* ADDataBaseManager.h */,
+				037038BD1B79CA9D001A3E22 /* ADDataBaseManager.m */,
+			);
+			name = DataBaseManager;
+			sourceTree = "<group>";
+		};
 		0498878A5E633C99EFE39524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				037038C51B79D2C0001A3E22 /* CoreLocation.framework */,
 				35BF103269453EC5DB51B33C /* libPods.a */,
 			);
 			name = Frameworks;
@@ -617,6 +644,8 @@
 				035E3A1F1B78A70800EA3A23 /* CustomTableViewCell.m in Sources */,
 				035E39ED1B78812700EA3A23 /* UIImage+Tint.m in Sources */,
 				035E39E01B787DA300EA3A23 /* UIFont+ADFont.m in Sources */,
+				037038C41B79CC41001A3E22 /* ADLocationManager.m in Sources */,
+				037038BE1B79CA9D001A3E22 /* ADDataBaseManager.m in Sources */,
 				035E3A0D1B789D2E00EA3A23 /* ADPushManager.m in Sources */,
 				035E39EA1B7880C800EA3A23 /* NSError+ADError.m in Sources */,
 				035E39DD1B787C9A00EA3A23 /* UIColor+ADColor.m in Sources */,
@@ -626,6 +655,7 @@
 				035E39A71B78709700EA3A23 /* ViewController.m in Sources */,
 				035E39E71B787F9400EA3A23 /* NSUserDefaults+ADSaveSettings.m in Sources */,
 				035E3A131B78A69100EA3A23 /* TableViewDataSource.m in Sources */,
+				037038C31B79CC41001A3E22 /* ADUserLoction.m in Sources */,
 				035E39F31B78819800EA3A23 /* AFDateExtension.swift in Sources */,
 				035E39A41B78709700EA3A23 /* AppDelegate.m in Sources */,
 				035E3A141B78A69100EA3A23 /* TableViewDelegate.m in Sources */,

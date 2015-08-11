@@ -21,9 +21,8 @@
     return sharedPushManager;
 }
 
-- (void)regPush
-{
-    if(IOS8_OR_LATER) {
+- (void)regPush {
+    if (IOS8_OR_LATER) {
         [[ADPushManager shareManager] registerPushForIOS8];
     } else {
         [[ADPushManager shareManager] registerPush];
