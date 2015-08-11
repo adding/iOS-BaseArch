@@ -95,6 +95,7 @@ iOS开发基础框架 及 推荐实践，目的在于帮助开发者更快的开
 - 本地化字符
 
 ##### 为什么推荐在 MVVM 模式下 使用 ReactiveCocoa?
+
 在 Model 改变时，我们希望能够及时的更新 ViewModel 和 View，这个时候使用ReactiveCocoa 能够 动态响应并修改我们的 ViewModel。
 ---- 
 参考文章：
