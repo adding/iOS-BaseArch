@@ -43,8 +43,8 @@ static ADLocationManager *shareLocationManager = nil;
     self.location.longitude = @(newLocation.coordinate.longitude).stringValue;
     self.location.latitude = @(newLocation.coordinate.latitude).stringValue;
     
-    [[NSUserDefaults standardUserDefaults] setLongitude:self.location.longitude];
-    [[NSUserDefaults standardUserDefaults] setLatitude:self.location.latitude];
+//    [[NSUserDefaults standardUserDefaults] setLongitude:self.location.longitude];
+//    [[NSUserDefaults standardUserDefaults] setLatitude:self.location.latitude];
     [manager stopUpdatingLocation];
 }
 
